@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="sketchestilo.css">
+    <title>Sketching...</title>
+     <link rel="icon" type="image/x-icon" href="BaseImg/logosvg.gif">
+    <link rel="stylesheet" href="https://use.typekit.net/vzn0btv.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+  <div class="barracima">
+    <img src="BaseImg/sketchbooktitle.png">
+  </div>
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="img/sketch/1.jpg" style="width:100%">
+    <img class="mySlides" src="img/sketch/2.jpg" style="width:100%">
+    <img class="mySlides" src="img/sketch/3.jpg" style="width:100%">
+
+    <button class="w3-display-left" onclick="plusDivs(-1)"><img src="BaseImg/btnsketch2.png" style="width:60%"></button>
+    <button class="w3-display-right" onclick="plusDivs(1)"><img src="BaseImg/btnsketch1.png" style="width:60%"></button>
+  </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+  <a href="index.html"><img src="BaseImg/backsketch.png" class="imgbtncoiso"></a>
+  <script>
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    document.body.style.width = w;
+    document.body.style.height = h + 'px';
+  </script>
+</body>
+</html>

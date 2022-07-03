@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Sui Generis";
+  src: url("/fontes/suigenerisrg.otf") format("otf");
+}
+
+body {
+  background-color: #AC4D07;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background: linear-gradient(-45deg, #C26E02, #AC4D07, #C23602);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  padding: 0px;
+  margin: 0px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.barracima{
+	background-color: #713511;
+	width: 100%;
+	border-bottom: 10px solid #F07B32;
+	padding-left: 98px;
+}
+.bottomO{
+	position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1b0564;
+  border-top: 10px solid #4313e0;
+  padding-right: 30px;
+  padding-top: 20px;
+
+}
+button{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    text-align: center;
+}
+.mySlides {
+	padding-top: 30px;
+	padding-bottom: 10px;
+	width: 50%;
+	height: 20%;
+}
+.imgbtncoiso{
+	float: right;
+	width: 18%;
+	padding: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-track {
+  background: #554599; 
+}
+::-webkit-scrollbar-thumb {
+  background: #554599; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #554599; 
+}
+
+@media screen and (max-width: 1000px) { 
+  .imgbtncoiso{
+  float: right;
+  width: 30%;
+  padding: 10px;
+}
+}
